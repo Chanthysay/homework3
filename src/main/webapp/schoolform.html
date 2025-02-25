@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Form</title>
+</head>
+<body>
+<h2>School Form</h2>
+<form action="SchoolFormServlet" method="post">
+    Email: <input type="email" name="email" required><br>
+    Password: <input type="password" name="password" required><br>
+    Birthday: <input type="date" name="birthday" required><br>
+    New Student?
+    <input type="radio" name="newStudent" value="yes"> Yes
+    <input type="radio" name="newStudent" value="no"> No <br>
+    College: <input type="text" name="college"><br>
+    Major:
+    <select name="major">
+        <option value="Computer Science">Computer Science</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Business">Business</option>
+    </select> <br>
+    Favorite Color: <input type="color" name="color"><br>
+    Terms and Conditions: <input type="checkbox" name="terms" value="yes"> I agree.<br>
+    <input type="submit" value="Submit Form">
+</form>
+</body>
+</html>
